@@ -1,0 +1,22 @@
+{
+  "name": "easy-axios",
+  "version": "1.0.0",
+  "description": "写个简单的 axios 玩玩",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worker-ben/easy-axios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/worker-ben/easy-axios/issues"
+  },
+  "homepage": "https://github.com/worker-ben/easy-axios#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
