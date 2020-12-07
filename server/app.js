@@ -13,6 +13,20 @@ app.get('/', (req, res) => {
   res.sendFile('/Users/bytedance/Desktop/easy-axios/server/index.html');
 })
 
+// demo1 服务端
+app.get('/demo1', (req, res) => {
+  res.json({
+    msg: `hello demo1`
+  })
+})
+
+// demo2 服务端
+app.get('/demo2', (req, res) => {
+  res.json({
+    msg: `hello demo2`
+  })
+})
+
 const port = process.env.PORT || 3000
 module.exports = app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)

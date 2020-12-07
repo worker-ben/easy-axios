@@ -6,5 +6,5 @@
 2. 搭建一个调用 Axios 类的脉络结构；
 
 3. 为 Axios 类添加基础的逻辑；
-- 发 XHR 请求
+- 发送 XHR 请求，并包裹成 Promise
 - config 的处理

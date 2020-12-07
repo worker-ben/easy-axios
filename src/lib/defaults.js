@@ -6,7 +6,8 @@ function getDefaultAdapter() {
   // 其实就是判断浏览器环境
   if (typeof XMLHttpRequest !== 'undefined') {
     adapter = xhrAdapter;
-  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+  } else if (typeof process !== 'undefined'
+    && Object.prototype.toString.call(process) === '[object process]') {
     // 判断 Node.js 环境
     // For node use HTTP adapter
   }

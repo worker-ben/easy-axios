@@ -8,6 +8,13 @@ export default class Axois {
   // 所有的请求，都可以抽象为 request
   // 发get请求
   get(config) {
+    // 如果传进来的是 url
+    if (typeof config === 'string') {
+      // 第二个参数作为 config （1. 参数传递的问题）
+      config = arguments[1] || {};
+      // 将 url 设置正确
+      config.url = arguments[0];
+    }
     return this.request({
       ...config,
       method: 'GET',
@@ -16,6 +23,13 @@ export default class Axois {
 
   // 发post请求
   post(config) {
+    // 如果传进来的是 url
+    if (typeof config === 'string') {
+      // 第二个参数作为 config （1. 参数传递的问题）
+      config = arguments[1] || {};
+      // 将 url 设置正确
+      config.url = arguments[0];
+    }
     return this.request({
       ...config,
       method: 'POST',
